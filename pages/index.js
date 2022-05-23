@@ -15,10 +15,10 @@ export default function Home({ mostRecentPost, allPost }) {
       <section id="main" className="main-card">
         <div className="recent-post container">
           <div className="post-padding pt-14 pb-2 ">
-            <div className="all-contents md:flex pb-14">
+            <div className="all-contents md:flex md:pb-14 pb-2 ">
               <div className="rigth-content text-white   md:pl-28 pl-8 overflow-x-hidden">
                 <div className="post-writer flex items-center space-x-3">
-                  <img className="w-8 h-8 rounded-full" src="assets/img-2.jpg" alt="" />
+                  {/* <img className="w-8 h-8 rounded-full" src="assets/img-2.jpg" alt="" /> */}
                   <p className="text-sm tracking-wider ">Nitesh Yadav</p>
                 </div>
                 <div className="titles py-8 md:text-2xl w-[90%] md:w-[80%] hover:underline cursor-pointer">
@@ -33,35 +33,23 @@ export default function Home({ mostRecentPost, allPost }) {
                   </div>
                   <div className="date flex space-x-3 py-2">
                     <p className="text-xsm tracking-wider">May 12, 2022</p>
-                    <p className="text-xsm tracking-wider">11 minutes</p>
+                    <p className="text-xsm tracking-wider">11 Min</p>
                   </div>
                 </div>
               </div>
-              <div className="left-content flex  h-fit space-x-4 md:space-x-0 overflow-hidden md:ml-20 mt-6 md:block">
+              <div className="left-content flex  h-fit  overflow-hidden  md:-mt-2 mt-4 md:block md:ml-4">
                 {/* <img className="h-[8em] w-[24em] md:w-[40em] md:h-[16em] rounded-sm -ml-16  md:-ml-0 " src="assets/img-2.jpg" alt=""/> */}
-                <div className="h-[8em] w-[24em] md:w-[40em] md:h-[16em] rounded-sm  relative">
+                <div className=" h-[12em] w-full mx-6 md:w-[30em]  md:mr-72 md:h-[18em] rounded-sm   relative">
                   {mostRecentPost.yoast_head_json.og_image ? (
                     <>
                       <Image
                         src={mostRecentPost.yoast_head_json.og_image["0"].url}
                         layout="fill" // required
                         objectFit="cover" // change to suit your needs
-                        alt="thumnail"
-                        className='-ml-16  md:-ml-0'
+                        alt="thumbnail"
+                        
                       />
-                      <Image
-                        src={mostRecentPost.yoast_head_json.og_image["0"].url}
-                        layout="fill" // required
-                        objectFit="cover" // change to suit your needs
-                        alt="thumnail"
-                        className='h-[8em] w-[24em] md:w-[40em] md:h-[16em] rounded-sm md:my-4 '
-                      />
-                      <Image
-                        src={mostRecentPost.yoast_head_json.og_image["0"].url}
-                        layout="fill" // required
-                        objectFit="cover" // change to suit your needs
-                        alt="thumnail"
-                      />
+                      
                     </>
                   ) : (
                     ""
@@ -106,7 +94,7 @@ export default function Home({ mostRecentPost, allPost }) {
 					<div className="topic flex space-x-4 py-2 items-center">
 						<p className="bg-red-800 py-1 px-3 text-xsm rounded-full tracking-wider text-white">Technology</p>
 						<p className="text-xsm tracking-wider">May 12, 2022</p>
-						<p className="text-xsm tracking-wider">11 minutes</p>
+						<p className="text-xsm tracking-wider">11 Min</p>
 					</div>
 				</div>
 				<div className="card-title cursor-pointer">

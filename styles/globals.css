@@ -16,6 +16,11 @@ body {
 * {
   box-sizing: border-box;
 }
+.myNav{
+  background: rgb(11,40,85);
+background: linear-gradient(90deg, rgba(11,40,85,1) 0%, rgba(11,28,40,1) 100%, rgba(62,5,107,1) 100%, rgba(75,13,98,1) 100%, rgba(11,28,40,1) 100%);
+}
+
 .main-card {
   background: rgb(3, 1, 52);
   background: linear-gradient(90deg, rgba(3, 1, 52, 1) 0%, rgba(3, 1, 52, 1) 44%, rgba(62, 5, 107, 1) 100%, rgba(75, 13, 98, 1) 100%, rgba(2, 6, 27, 1) 100%);
@@ -33,3 +38,18 @@ body {
   color: #a3a3a3;
 }
 
+.post-content{
+  /* color: rgba(37,38,94,.7); */
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  font-family: euclid_circular_a,arial,source sans pro,helvetica neue,helvetica,arial,sans-serif;
+
+}
+
+@media screen and (max-width: 700px) {
+  .ulList{
+    background: rgb(11,40,85);
+  background: linear-gradient(90deg, rgba(11,40,85,1) 0%, rgba(11,28,40,1) 100%, rgba(62,5,107,1) 100%, rgba(75,13,98,1) 100%, rgba(11,28,40,1) 100%);
+  }
+}
